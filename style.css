@@ -1,4 +1,4 @@
-/* --- Bluish Eye-Soothing Theme & Living Animation --- */
+/* --- Bluish Eye-Soothing Theme & Advanced Living Animation --- */
 :root {
     --bg-color: #0B132B;            /* Deep soothing midnight blue */
     --surface-color: #1C2541;       /* Rich card blue */
@@ -135,7 +135,7 @@ h1, h2, h3 {
     transition: var(--transition-smooth);
 }
 
-/* --- Hero Section with Living Pulse Animation --- */
+/* --- Hero Section with Living Pulsing & Floating Animation --- */
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -148,15 +148,36 @@ h1, h2, h3 {
     overflow: hidden;
 }
 
+/* Background living glow animation element */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(72, 202, 228, 0.08) 0%, rgba(11, 19, 43, 0) 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: livingPulse 8s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes livingPulse {
+    0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.6; }
+    100% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+}
+
 .hero-content {
     max-width: 800px;
     padding: 0 1.5rem;
-    animation: floatHero 4s ease-in-out infinite alternate;
+    animation: floatHero 5s ease-in-out infinite alternate;
+    position: relative;
+    z-index: 2;
 }
 
 @keyframes floatHero {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-8px); }
+    100% { transform: translateY(-10px); }
 }
 
 .hero-subtitle {
@@ -215,12 +236,17 @@ h1, h2, h3 {
     color: #0B132B;
     font-weight: 600;
     box-shadow: 0 4px 15px rgba(72, 202, 228, 0.3);
+    animation: btnGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes btnGlow {
+    0% { box-shadow: 0 4px 15px rgba(72, 202, 228, 0.3); }
+    100% { box-shadow: 0 6px 22px rgba(72, 202, 228, 0.6); }
 }
 
 .btn-primary:hover {
     background-color: var(--accent-hover);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(72, 202, 228, 0.5);
 }
 
 .btn-secondary {
@@ -249,7 +275,8 @@ h1, h2, h3 {
 
 .about-single-container:hover {
     border-color: rgba(72, 202, 228, 0.5);
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(72, 202, 228, 0.1);
 }
 
 .about-single-container p {
@@ -280,9 +307,9 @@ h1, h2, h3 {
 }
 
 .card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     border-color: var(--accent-color);
-    box-shadow: 0 14px 35px rgba(72, 202, 228, 0.15);
+    box-shadow: 0 16px 40px rgba(72, 202, 228, 0.18);
 }
 
 .card-title {
@@ -400,7 +427,8 @@ h1, h2, h3 {
 
 .creative-showcase-box:hover {
     border-color: var(--accent-color);
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(72, 202, 228, 0.15);
 }
 
 .creative-showcase-box h3 {
@@ -451,6 +479,7 @@ h1, h2, h3 {
 .form-group textarea:focus {
     border-color: var(--accent-color);
     background-color: #111B33;
+    box-shadow: 0 0 10px rgba(72, 202, 228, 0.2);
 }
 
 .submit-btn {
@@ -486,6 +515,7 @@ h1, h2, h3 {
     border-color: var(--accent-color);
     color: var(--accent-color);
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(72, 202, 228, 0.2);
 }
 
 /* --- Footer --- */
