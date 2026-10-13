@@ -1,442 +1,554 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta
-    name="description"
-    content="Beyond the Classroom — Sumaya Binte Sadat's personal portfolio of projects, experiences, and creative pursuits."
-  >
-
-  <meta name="author" content="Sumaya Binte Sadat">
-  <meta name="theme-color" content="#f8f7f3">
-
-  <title>Beyond the Classroom | Sumaya Binte Sadat</title>
-
-  <!-- Website styles -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Website interactions and editable content -->
-  <script src="script.js" defer></script>
-</head>
-
-<body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-
-  <!-- Navigation -->
-  <header class="site-header">
-    <nav class="navbar container" aria-label="Main navigation">
-
-      <a class="brand" href="#home">
-        <span class="brand-mark">S.</span>
-        <span class="brand-name">Sumaya Binte Sadat</span>
-      </a>
-
-      <button
-        class="menu-toggle"
-        id="menu-toggle"
-        type="button"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        aria-controls="nav-links"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">GitHub Projects</a></li>
-        <li><a href="#internships">Internships</a></li>
-        <li><a href="#volunteering">Volunteering</a></li>
-        <li><a href="#creative">Creative Pages</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-    </nav>
-  </header>
-
-  <main id="main-content">
-
-    <!-- 1. HOME -->
-    <section class="hero section" id="home">
-      <div class="container hero-layout">
-
-        <div class="hero-content">
-          <p class="eyebrow">
-            A PERSONAL DOCUMENTARY OF CURIOSITY
-          </p>
-
-          <p class="hero-greeting">Hello, I'm</p>
-
-          <h1>Sumaya Binte Sadat</h1>
-
-          <h2 class="portfolio-title">
-            Beyond the Classroom
-          </h2>
-
-          <p class="hero-subtitle">
-            Projects, Perspectives &amp; Pursuits
-          </p>
-
-          <p class="hero-description">
-            A space documenting the things I build, the experiences
-            I gather, and the creative interests I continue to explore.
-            Each project and pursuit represents another opportunity
-            to learn something new.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">
-              Explore My Projects
-              <span aria-hidden="true">↗</span>
-            </a>
-
-            <a class="button button-secondary" href="#about">
-              Get to Know Me
-            </a>
-          </div>
-
-          <p class="hero-note">
-            Engineering, healthcare, creativity, and everything
-            I discover along the way.
-          </p>
-        </div>
-
-        <!-- Replace this placeholder with your own image later. -->
-        <div class="hero-visual">
-          <div class="hero-image-placeholder">
-            <span class="placeholder-symbol" aria-hidden="true">✳</span>
-            <p>Your image, your perspective.</p>
-            <span class="placeholder-caption">
-              An optional personal photograph
-            </span>
-          </div>
-
-          <div class="hero-side-note">
-            <span class="small-line"></span>
-            <span>Always exploring</span>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="container hero-bottom">
-        <span>PROJECTS</span>
-        <span class="hero-bottom-divider"></span>
-        <span>EXPERIENCES</span>
-        <span class="hero-bottom-divider"></span>
-        <span>CREATIVE PURSUITS</span>
-      </div>
-    </section>
-
-    <!-- 2. ABOUT ME -->
-    <section class="section section-light" id="about">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="eyebrow">A LITTLE ABOUT ME</p>
-          <h2>Curiosity doesn't fit into one box.</h2>
-          <p class="section-intro">
-            A look at the interests, questions, and experiences
-            that shape what I choose to explore.
-          </p>
-        </div>
-
-        <div class="about-layout">
-          <div class="about-main">
-            <h3>Learning by exploring</h3>
-
-            <p>
-              I enjoy exploring different kinds of work, from
-              building technical projects to experimenting with
-              creative activities. I like having the freedom to
-              follow different interests and learn through the
-              process of trying something new.
-            </p>
-
-            <p>
-              I don't want to define myself through a single niche.
-              My interests are broad and continue to evolve, and
-              I want this space to reflect that variety honestly.
-            </p>
-
-            <p>
-              Looking ahead, I'm particularly interested in exploring
-              the intersection of engineering and healthcare.
-              I'm curious about the possibilities in these fields,
-              while remaining open to other directions I may discover.
-            </p>
-
-            <p>
-              Beyond the Classroom is my personal documentary of
-              projects, experiences, and creative pursuits. It brings
-              different parts of my work together in one place,
-              allowing others to see not only what I do, but also
-              what I'm choosing to explore and learn.
-            </p>
-          </div>
-
-          <aside class="about-note">
-            <span class="note-symbol" aria-hidden="true">✳</span>
-            <p class="note-label">MY APPROACH</p>
-            <h3>Explore.<br>Experiment.<br>Keep learning.</h3>
-            <p>
-              Not every interest needs to become a specialty.
-              Sometimes, exploring something new is valuable
-              in itself.
-            </p>
-          </aside>
-        </div>
-
-        <div class="interest-list">
-          <span>Technical Projects</span>
-          <span>Engineering &amp; Healthcare</span>
-          <span>Writing &amp; Communication</span>
-          <span>Photography &amp; Art</span>
-          <span>Cooking &amp; Creativity</span>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 3. GITHUB PROJECTS -->
-    <section class="section" id="projects">
-      <div class="container">
-
-        <div class="section-heading section-heading-row">
-          <div>
-            <p class="eyebrow">BUILDING &amp; EXPERIMENTING</p>
-            <h2>Projects I've worked on.</h2>
-            <p class="section-intro">
-              A collection of coding projects and technical
-              experiments. Visit each repository to explore
-              the available source code and documentation.
-            </p>
-          </div>
-
-          <a
-            class="text-link external-link"
-            href="https://github.com/sumaya-sadat07"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit my GitHub
-            <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-
-        <div class="project-grid" id="project-grid">
-          <p class="loading-message">Loading projects...</p>
-        </div>
-
-        <p class="section-footnote">
-          Project descriptions and technology labels will be
-          updated as their details are verified.
-        </p>
-
-      </div>
-    </section>
-
-    <!-- 4. INTERNSHIPS -->
-    <section class="section section-light" id="internships">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="eyebrow">WORK &amp; LEARNING</p>
-          <h2>Internship experiences.</h2>
-          <p class="section-intro">
-            Experiences involving writing, research, and
-            developing useful content for different topics.
-          </p>
-        </div>
-
-        <div class="experience-grid" id="internship-grid">
-          <p class="loading-message">Loading experiences...</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 5. VOLUNTEERING -->
-    <section class="section" id="volunteering">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="eyebrow">COMMUNITY &amp; SERVICE</p>
-          <h2>Showing up for the community.</h2>
-          <p class="section-intro">
-            A record of community involvement, communication,
-            and opportunities to contribute through service.
-          </p>
-        </div>
-
-        <div class="volunteer-content" id="volunteering-grid">
-          <p class="loading-message">Loading volunteering experiences...</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 6. CREATIVE PAGES -->
-    <section class="section section-light" id="creative">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="eyebrow">BEYOND THE TECHNICAL</p>
-          <h2>Other sides of my world.</h2>
-          <p class="section-intro">
-            Photography, cooking, and art are separate spaces
-            where I document and explore my creative interests.
-          </p>
-        </div>
-
-        <!-- Photography -->
-        <article class="creative-collection" id="photography">
-          <div class="collection-heading">
-            <div>
-              <p class="collection-number">01 / PHOTOGRAPHY</p>
-              <h3>Solistice Frames</h3>
-              <p>
-                Photographs, moments, and perspectives worth
-                keeping.
-              </p>
-            </div>
-
-            <a
-              class="button button-secondary instagram-link"
-              href="https://www.instagram.com/solisticeframes/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Explore on Instagram ↗
-            </a>
-          </div>
-
-          <div
-            class="gallery-grid"
-            id="photography-gallery"
-            aria-label="Photography gallery"
-          >
-            <p class="loading-message">Loading gallery...</p>
-          </div>
-        </article>
-
-        <!-- Cooking -->
-        <article class="creative-collection" id="cooking">
-          <div class="collection-heading">
-            <div>
-              <p class="collection-number">02 / COOKING</p>
-              <h3>The Savora</h3>
-              <p>
-                Recipes, food experiments, and the joy of
-                creating something in the kitchen.
-              </p>
-            </div>
-
-            <a
-              class="button button-secondary instagram-link"
-              href="https://www.instagram.com/the_savora/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Explore on Instagram ↗
-            </a>
-          </div>
-
-          <div
-            class="gallery-grid"
-            id="cooking-gallery"
-            aria-label="Cooking gallery"
-          >
-            <p class="loading-message">Loading gallery...</p>
-          </div>
-        </article>
-
-        <!-- Art -->
-        <article class="creative-collection" id="art">
-          <div class="collection-heading">
-            <div>
-              <p class="collection-number">03 / DRAWING &amp; ART</p>
-              <h3>L'Atelier de Sumaya Sadat</h3>
-              <p>
-                A growing collection of drawings, paintings,
-                and other creative work.
-              </p>
-            </div>
-
-            <a
-              class="button button-secondary instagram-link"
-              href="https://www.instagram.com/latelierdesumaya.s/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Explore on Instagram ↗
-            </a>
-          </div>
-
-          <div
-            class="gallery-grid"
-            id="art-gallery"
-            aria-label="Art gallery"
-          >
-            <p class="loading-message">Loading gallery...</p>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- 7. CONTACT -->
-    <section class="section contact-section" id="contact">
-      <div class="container">
-
-        <div class="contact-layout">
-          <div class="contact-intro">
-            <p class="eyebrow">LET'S CONNECT</p>
-            <h2>Every new connection begins somewhere.</h2>
-            <p>
-              If you'd like to learn more about my projects,
-              experiences, or interests, feel free to reach out.
-            </p>
-          </div>
-
-          <div class="contact-links" id="contact-links">
-            <p class="loading-message">Loading contact information...</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-
-      <a class="footer-brand" href="#home">
-        Beyond the Classroom
-      </a>
-
-      <p>
-        Projects, Perspectives &amp; Pursuits
-      </p>
-
-      <a class="back-to-top" href="#home">
-        Back to top ↑
-      </a>
-
-      <p class="copyright">
-        © <span id="current-year"></span> Sumaya Binte Sadat.
-        A personal portfolio.
-      </p>
-
-    </div>
-  </footer>
-
-</body>
-</html>
+/* --- CSS Reset & Variables --- */
+:root {
+    --bg-color: #F8F7F4; /* Warm off-white neutral */
+    --surface-color: #FFFFFF;
+    --text-primary: #2C2C2A;
+    --text-secondary: #6B6963;
+    --accent-color: #4A5D4E; /* Sophisticated muted sage */
+    --accent-hover: #3A4A3E;
+    --border-color: #E2E0D8;
+    --card-shadow: 0 4px 20px rgba(44, 44, 42, 0.04);
+    --transition-smooth: all 0.3s ease;
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- Container & Layout --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.section-header h2 {
+    font-size: 2.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+/* --- Header & Navigation --- */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(248, 247, 244, 0.92);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.site-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+    position: val;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-color);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--text-primary);
+    transition: var(--transition-smooth);
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5rem;
+    background: radial-gradient(circle at center, #FFFFFF 0%, var(--bg-color) 70%);
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 0 1.5rem;
+}
+
+.hero-subtitle {
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* --- About Section --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text p {
+    margin-bottom: 1.25rem;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+.identity-card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem;
+    border-radius: 6px;
+    box-shadow: var(--card-shadow);
+}
+
+.identity-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.role-tag {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.identity-card hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 1.25rem 0;
+}
+
+.quick-facts {
+    list-style: none;
+}
+
+.quick-facts li {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.quick-facts a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.quick-facts a:hover {
+    text-decoration: underline;
+}
+
+/* --- Cards Grids (Projects, Internships, Volunteering) --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition-smooth);
+    box-shadow: var(--card-shadow);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-subtitle {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.card-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.card-meta {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    color: var(--text-secondary);
+}
+
+.card-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.card-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: var(--transition-smooth);
+}
+
+.card-link:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.card-link.disabled {
+    color: var(--text-secondary);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* --- Creative Section --- */
+.creative-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    padding: 0.6rem 1.5rem;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.tab-btn:hover, .tab-btn.active {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    border-color: var(--accent-color);
+}
+
+.gallery-container {
+    display: none;
+}
+
+.gallery-container.active {
+    display: block;
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.gallery-header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery-header-bar h3 {
+    font-size: 1.8rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 220px;
+    background-color: #EFECE6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-style: italic;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.gallery-caption {
+    padding: 1.25rem;
+}
+
+.gallery-caption h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+    font-family: var(--font-heading);
+}
+
+.gallery-caption p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
+/* --- Contact Section --- */
+.contact-card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 3rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: var(--card-shadow);
+}
+
+.contact-card p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.email-btn {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+.email-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+.linkedin-btn, .github-btn {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.linkedin-btn:hover, .github-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* --- Footer --- */
+.site-footer {
+    padding: 2.5rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    background-color: var(--surface-color);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .site-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--surface-color);
+        border-bottom: 1px solid var(--border-color);
+        padding: 1.5rem 2rem;
+        box-shadow: var(--card-shadow);
+    }
+    .site-nav.active {
+        display: block;
+    }
+    .site-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    .hero-content h1 {
+        font-size: 2.75rem;
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
