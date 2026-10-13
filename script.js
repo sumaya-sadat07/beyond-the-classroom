@@ -2,7 +2,7 @@
    SUMAYA BINTE SADAT - PORTFOLIO DATA & INTERACTIVE LOGIC
    ========================================================================== */
 
-// 1. GITHUB PROJECTS DATA (Direct repo links working)
+// 1. GITHUB PROJECTS DATA
 const githubProjects = [
     {
         name: "Scientific-Calculator",
@@ -42,7 +42,7 @@ const githubProjects = [
     }
 ];
 
-// 2. INTERNSHIPS DATA (Timeline removed)
+// 2. INTERNSHIPS DATA
 const internshipsData = [
     {
         organization: "AP Classroom BD",
@@ -58,7 +58,7 @@ const internshipsData = [
     }
 ];
 
-// 3. VOLUNTEERING DATA (Duration removed)
+// 3. VOLUNTEERING DATA
 const volunteeringData = [
     {
         organization: "ICNA Relief, USA",
@@ -68,41 +68,31 @@ const volunteeringData = [
     }
 ];
 
-// 4. CREATIVE GALLERIES DATA (Working Instagram links)
+// 4. CREATIVE PAGES DATA (Direct clean Instagram links)
 const creativeData = {
     photography: {
         title: "Solistice Frames",
-        instagramUrl: "https://www.instagram.com/solisticeframes/?hl=en",
-        items: [
-            { title: "Composition I", caption: "A study in natural light and shadow.", placeholder: "Replace with photo file path" },
-            { title: "Urban Geometry", caption: "Lines and perspectives captured in the city.", placeholder: "Replace with photo file path" },
-            { title: "Silent Horizon", caption: "Stillness captured during evening twilight.", placeholder: "Replace with photo file path" }
-        ]
+        description: "Explore my photography gallery capturing candid moments, natural light, and urban perspectives.",
+        instagramUrl: "https://www.instagram.com/solisticeframes/?hl=en"
     },
     cooking: {
         title: "The Savora",
-        instagramUrl: "https://www.instagram.com/the_savora/?hl=en",
-        items: [
-            { title: "Artisan Dish I", caption: "Experimenting with flavor profiles and plating.", placeholder: "Replace with recipe photo" },
-            { title: "Culinary Exploration", caption: "Baking and culinary craft in progress.", placeholder: "Replace with recipe photo" }
-        ]
+        description: "Discover culinary creations, recipe experiments, plating, and food artistry.",
+        instagramUrl: "https://www.instagram.com/the_savora/?hl=en"
     },
     art: {
         title: "L'Atelier de Sumaya Sadat",
-        instagramUrl: "https://www.instagram.com/latelierdesumaya.s/?hl=en",
-        items: [
-            { title: "Sketchbook Study", caption: "Pencil and ink experimentation.", placeholder: "Replace with artwork photo" },
-            { title: "Canvas Painting", caption: "Exploring color tones and textures.", placeholder: "Replace with artwork photo" }
-        ]
+        description: "Browse through my sketchbook studies, canvas paintings, and visual art pieces.",
+        instagramUrl: "https://www.instagram.com/latelierdesumaya.s/?hl=en"
     }
 };
 
 /* ==========================================================================
-   RENDER FUNCTIONS
+   RENDER FUNCTIONS & INTERACTIVITY
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Render GitHub Projects (Direct GitHub link, awaiting URL removed)
+    // Render GitHub Projects
     const projectsGrid = document.getElementById("projects-grid");
     if (projectsGrid) {
         projectsGrid.innerHTML = githubProjects.map(p => `
@@ -121,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `).join('');
     }
 
-    // Render Internships (Without Timeline)
+    // Render Internships
     const internshipsGrid = document.getElementById("internships-grid");
     if (internshipsGrid) {
         internshipsGrid.innerHTML = internshipsData.map(i => `
@@ -138,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `).join('');
     }
 
-    // Render Volunteering (Without Duration)
+    // Render Volunteering
     const volunteeringGrid = document.getElementById("volunteering-grid");
     if (volunteeringGrid) {
         volunteeringGrid.innerHTML = volunteeringData.map(v => `
@@ -153,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `).join('');
     }
 
-    // Creative Galleries
+    // Creative Pages Renderer
     const creativeArea = document.getElementById("creative-content-area");
     const tabButtons = document.querySelectorAll(".tab-btn");
 
@@ -163,20 +153,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         creativeArea.innerHTML = `
             <div class="gallery-container active">
-                <div class="gallery-header-bar">
+                <div class="creative-showcase-box">
                     <h3>${cat.title}</h3>
-                    <a href="${cat.instagramUrl}" target="_blank" rel="noopener" class="btn btn-secondary">Visit Instagram Page</a>
-                </div>
-                <div class="gallery-grid">
-                    ${cat.items.map(item => `
-                        <div class="gallery-item">
-                            <div class="image-placeholder">[ ${item.placeholder} ]</div>
-                            <div class="gallery-caption">
-                                <h4>${item.title}</h4>
-                                <p>${item.caption}</p>
-                            </div>
-                        </div>
-                    `).join('')}
+                    <p>${cat.description}</p>
+                    <a href="${cat.instagramUrl}" target="_blank" rel="noopener" class="btn btn-primary">Visit Instagram Page &rarr;</a>
                 </div>
             </div>
         `;
