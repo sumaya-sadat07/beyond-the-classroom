@@ -59,10 +59,8 @@
                 </div>
                 <div class="about-grid">
                     <div class="about-text">
-                        <p>I am a dynamic person who enjoys exploring different kinds of work. I work on technical projects, dive into creative activities, and try different things that genuinely interest me.</p>
-                        <p>I do not want to define myself through one narrow niche. My interests are broad, and I want my portfolio to reflect that variety instead of making me appear focused on only one subject.</p>
-                        <p>My future aspiration is to explore opportunities at the intersection of engineering and healthcare. I am interested in seeing how far I can go in these areas, while remaining open to learning and discovering new interests.</p>
-                        <p>The central purpose of this portfolio is to serve as a living documentary of my work and experiences. Visitors can explore my personality, curiosity, and evolving pursuits all in one place.</p>
+                        <p>I am a dynamic person who enjoys exploring technical projects, creative activities, and different subjects that genuinely interest me. Rather than defining myself through one narrow niche, my portfolio reflects a broad range of pursuits.</p>
+                        <p>My future aspiration is to explore opportunities at the intersection of engineering and healthcare while remaining open to continuous learning. This portfolio serves as a living documentary of my work, experiences, and evolving interests.</p>
                     </div>
                     <div class="about-card-container">
                         <div class="identity-card">
@@ -85,9 +83,8 @@
             <div class="container">
                 <div class="section-header">
                     <h2>GitHub Projects</h2>
-                        <p class="section-subtitle">Repositories exploring software tools, simulations, and utilities</p>
+                    <p class="section-subtitle">Repositories exploring software tools, simulations, and utilities</p>
                 </div>
-                <!-- Projects injected dynamically from script.js -->
                 <div id="projects-grid" class="cards-grid"></div>
             </div>
         </section>
@@ -99,7 +96,6 @@
                     <h2>Internships</h2>
                     <p class="section-subtitle">Professional experiences and content development</p>
                 </div>
-                <!-- Internships injected dynamically from script.js -->
                 <div id="internships-grid" class="cards-grid"></div>
             </div>
         </section>
@@ -111,7 +107,6 @@
                     <h2>Volunteering</h2>
                     <p class="section-subtitle">Community involvement and service with ICNA Relief, USA</p>
                 </div>
-                <!-- Volunteering injected dynamically from script.js -->
                 <div id="volunteering-grid" class="cards-grid"></div>
             </div>
         </section>
@@ -123,15 +118,11 @@
                     <h2>Creative Pages</h2>
                     <p class="section-subtitle">Perspectives beyond code: photography, cooking, and art</p>
                 </div>
-
-                <!-- Creative Sub-tabs -->
                 <div class="creative-tabs">
                     <button class="tab-btn active" data-target="photography">Solistice Frames (Photography)</button>
                     <button class="tab-btn" data-target="cooking">The Savora (Cooking)</button>
                     <button class="tab-btn" data-target="art">L'Atelier (Art)</button>
                 </div>
-
-                <!-- Creative Galleries Injected via script.js -->
                 <div id="creative-content-area" class="creative-content-area"></div>
             </div>
         </section>
@@ -141,11 +132,26 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Get in Touch</h2>
-                    <p class="section-subtitle">Connect with me across platforms</p>
+                    <p class="section-subtitle">Connect with me or send a message directly</p>
                 </div>
                 <div class="contact-card">
                     <p>I am always open to connecting, discussing engineering and healthcare intersections, or sharing perspectives.</p>
-                    <div class="contact-links">
+                    
+                    <!-- Direct Contact Form -->
+                    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                    </form>
+
+                    <div class="contact-links" style="margin-top: 2rem;">
                         <a href="mailto:sumayabintesadat@gmail.com" class="contact-btn email-btn">Email Me</a>
                         <a href="https://www.linkedin.com/in/sumaya-binte-sadat-0920/" target="_blank" rel="noopener" class="contact-btn linkedin-btn">LinkedIn Profile</a>
                         <a href="https://github.com/sumaya-sadat07" target="_blank" rel="noopener" class="contact-btn github-btn">GitHub Profile</a>

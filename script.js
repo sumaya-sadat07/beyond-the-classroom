@@ -2,83 +2,73 @@
    SUMAYA BINTE SADAT - PORTFOLIO DATA & INTERACTIVE LOGIC
    ========================================================================== */
 
-// 1. GITHUB PROJECTS DATA
-// To add a new project, copy an existing block {} and fill in your details.
+// 1. GITHUB PROJECTS DATA (Direct repo links working)
 const githubProjects = [
     {
         name: "Scientific-Calculator",
         description: "A functional scientific calculator built for precise mathematical operations and calculations.",
         technologies: ["JavaScript", "HTML5", "CSS3"],
-        repoUrl: "https://github.com/sumaya-sadat07/Scientific-Calculator",
-        liveUrl: "" // Leave empty if live demo is not available
+        repoUrl: "https://github.com/sumaya-sadat07/Scientific-Calculator"
     },
     {
         name: "To-do-list",
         description: "An organized task management application to track daily tasks and boost productivity.",
         technologies: ["JavaScript", "DOM Manipulation"],
-        repoUrl: "https://github.com/sumaya-sadat07/To-do-list",
-        liveUrl: ""
+        repoUrl: "https://github.com/sumaya-sadat07/To-do-list"
     },
     {
         name: "Unit-converter",
         description: "A handy utility application for seamlessly converting between various scientific and everyday units.",
         technologies: ["JavaScript", "Web Utilities"],
-        repoUrl: "https://github.com/sumaya-sadat07/Unit-converter",
-        liveUrl: ""
+        repoUrl: "https://github.com/sumaya-sadat07/Unit-converter"
     },
     {
         name: "Angry-Birds-Cannon-Simulator",
         description: "A physics-based projectile motion simulation inspired by classic mechanics principles.",
         technologies: ["JavaScript", "Physics Logic"],
-        repoUrl: "https://github.com/sumaya-sadat07/Angry-Birds-Cannon-Simulator",
-        liveUrl: ""
+        repoUrl: "https://github.com/sumaya-sadat07/Angry-Birds-Cannon-Simulator"
     },
     {
         name: "Studio-Canvas-Pro",
         description: "A creative digital canvas application for sketching, designing, and visual ideation.",
         technologies: ["JavaScript", "HTML Canvas"],
-        repoUrl: "https://github.com/sumaya-sadat07/Studio-Canvas-Pro",
-        liveUrl: ""
+        repoUrl: "https://github.com/sumaya-sadat07/Studio-Canvas-Pro"
     },
     {
         name: "Biomedical-ECG-Monitor",
         description: "A biomedical engineering project designed to simulate and analyze ECG signal monitoring.",
         technologies: ["Engineering", "Healthcare Tech", "Data Visualization"],
-        repoUrl: "https://github.com/sumaya-sadat07/Biomedical-ECG-Monitor",
-        liveUrl: ""
+        repoUrl: "https://github.com/sumaya-sadat07/Biomedical-ECG-Monitor"
     }
 ];
 
-// 2. INTERNSHIPS DATA
+// 2. INTERNSHIPS DATA (Timeline removed)
 const internshipsData = [
     {
         organization: "AP Classroom BD",
         role: "Content Writer & Resource Developer",
-        dates: "Editable Date / Present",
         description: "Wrote resourceful, relevant educational content related to AP subjects and student guides.",
         skills: ["Content Development", "Educational Writing", "AP Curriculum Research"]
     },
     {
         organization: "Aureve",
         role: "Skincare Content Writer",
-        dates: "Editable Date / Present",
         description: "Researched and wrote engaging content regarding various skincare components, ingredients, and related wellness topics.",
         skills: ["Skincare Science", "Technical Writing", "Component Research"]
     }
 ];
 
-// 3. VOLUNTEERING DATA
+// 3. VOLUNTEERING DATA (Duration removed)
 const volunteeringData = [
     {
         organization: "ICNA Relief, USA",
         activity: "Community Events & Translator",
         role: "Volunteer",
-        description: "Served as a translator at events, volunteered across different community initiatives, and assisted with food distribution for underprivileged community members.",
-        date: "Ongoing Community Service"
+        description: "Served as a translator at events, volunteered across different community initiatives, and assisted with food distribution for underprivileged community members."
     }
 ];
 
-// 4. CREATIVE GALLERIES DATA
+// 4. CREATIVE GALLERIES DATA (Working Instagram links)
 const creativeData = {
     photography: {
         title: "Solistice Frames",
@@ -108,11 +98,11 @@ const creativeData = {
 };
 
 /* ==========================================================================
-   RENDER FUNCTIONS (Injects Data into HTML automatically)
+   RENDER FUNCTIONS
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Render GitHub Projects
+    // Render GitHub Projects (Direct GitHub link, awaiting URL removed)
     const projectsGrid = document.getElementById("projects-grid");
     if (projectsGrid) {
         projectsGrid.innerHTML = githubProjects.map(p => `
@@ -126,15 +116,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class="card-actions">
                     <a href="${p.repoUrl}" target="_blank" rel="noopener" class="card-link">GitHub Repository &rarr;</a>
-                    <a href="${p.liveUrl || '#'}" target="_blank" rel="noopener" class="card-link ${p.liveUrl ? '' : 'disabled'}">
-                        ${p.liveUrl ? 'Live Demo &rarr;' : 'Awaiting URL'}
-                    </a>
                 </div>
             </div>
         `).join('');
     }
 
-    // Render Internships
+    // Render Internships (Without Timeline)
     const internshipsGrid = document.getElementById("internships-grid");
     if (internshipsGrid) {
         internshipsGrid.innerHTML = internshipsData.map(i => `
@@ -142,7 +129,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div>
                     <span class="card-subtitle">${i.organization}</span>
                     <h3 class="card-title">${i.role}</h3>
-                    <p class="card-meta"><strong>Timeline:</strong> ${i.dates}</p>
                     <p class="card-desc">${i.description}</p>
                     <div class="tech-tags">
                         ${i.skills.map(s => `<span class="tech-tag">${s}</span>`).join('')}
@@ -152,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `).join('');
     }
 
-    // Render Volunteering
+    // Render Volunteering (Without Duration)
     const volunteeringGrid = document.getElementById("volunteering-grid");
     if (volunteeringGrid) {
         volunteeringGrid.innerHTML = volunteeringData.map(v => `
@@ -160,14 +146,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div>
                     <span class="card-subtitle">${v.organization}</span>
                     <h3 class="card-title">${v.activity}</h3>
-                    <p class="card-meta"><strong>Role:</strong> ${v.role} | <strong>Duration:</strong> ${v.date}</p>
+                    <p class="card-meta"><strong>Role:</strong> ${v.role}</p>
                     <p class="card-desc">${v.description}</p>
                 </div>
             </div>
         `).join('');
     }
 
-    // Creative Tabs and Gallery Rendering Logic
+    // Creative Galleries
     const creativeArea = document.getElementById("creative-content-area");
     const tabButtons = document.querySelectorAll(".tab-btn");
 
@@ -196,10 +182,8 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
-    // Initial render for photography
     renderGallery('photography');
 
-    // Tab button click listeners
     tabButtons.forEach(btn => {
         btn.addEventListener("click", () => {
             tabButtons.forEach(b => b.classList.remove("active"));
@@ -218,7 +202,6 @@ document.addEventListener("DOMContentLoaded", () => {
             siteNav.classList.toggle("active");
         });
 
-        // Close menu when clicking a link on mobile
         siteNav.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", () => {
                 siteNav.classList.remove("active");
