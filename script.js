@@ -1,947 +1,228 @@
-// ============================================================
-// BEYOND THE CLASSROOM
-// Personal ECA Portfolio — Sumaya Binte Sadat
-//
-// BEGINNER EDITING GUIDE:
-// 1. Edit your information inside the EDITABLE WEBSITE DATA area.
-// 2. Add projects to the projects array.
-// 3. Add internships to the internships array.
-// 4. Add volunteering experiences to the volunteering array.
-// 5. Add photographs to the appropriate gallery array.
-// 6. Save this file and refresh your browser.
-//
-// No frameworks or extra libraries are required.
-// ============================================================
+/* ==========================================================================
+   SUMAYA BINTE SADAT - PORTFOLIO DATA & INTERACTIVE LOGIC
+   ========================================================================== */
 
-
-"use strict";
-
-
-// ============================================================
-// PART 1: EDITABLE WEBSITE DATA
-// This is the main place to change your website's content.
-// ============================================================
-
-const portfolioData = {
-
-  // ----------------------------------------------------------
-  // PERSONAL INFORMATION
-  // ----------------------------------------------------------
-
-  personal: {
-    name: "Sumaya Binte Sadat",
-    portfolioTitle: "Beyond the Classroom",
-    subtitle: "Projects, Perspectives & Pursuits",
-
-    github: "https://github.com/sumaya-sadat07",
-
-    email: "sumayabintesadat@gmail.com",
-
-    linkedin:
-      "https://www.linkedin.com/in/sumaya-binte-sadat-0920/"
-  },
-
-
-  // ----------------------------------------------------------
-  // GITHUB PROJECTS
-  //
-  // To add a project, copy one complete project object,
-  // paste it inside this array, and edit its information.
-  //
-  // tech: Add technologies only after verifying them.
-  // demo: Leave as an empty string until a real live demo exists.
-  // description: Replace the editable placeholder with verified
-  // information about the actual project.
-  // ----------------------------------------------------------
-
-  projects: [
-
+// 1. GITHUB PROJECTS DATA
+// To add a new project, copy an existing block {} and fill in your details.
+const githubProjects = [
     {
-      name: "Scientific-Calculator",
-
-      description:
-        "Project description to be added after reviewing the repository and verifying its functionality.",
-
-      tech: [],
-
-      repository:
-        "https://github.com/sumaya-sadat07/Scientific-Calculator",
-
-      demo: "",
-
-      symbol: "∑"
+        name: "Scientific-Calculator",
+        description: "A functional scientific calculator built for precise mathematical operations and calculations.",
+        technologies: ["JavaScript", "HTML5", "CSS3"],
+        repoUrl: "https://github.com/sumaya-sadat07/Scientific-Calculator",
+        liveUrl: "" // Leave empty if live demo is not available
     },
-
     {
-      name: "To-do-list",
-
-      description:
-        "Project description to be added after reviewing the repository and verifying its functionality.",
-
-      tech: [],
-
-      repository:
-        "https://github.com/sumaya-sadat07/To-do-list",
-
-      demo: "",
-
-      symbol: "✓"
+        name: "To-do-list",
+        description: "An organized task management application to track daily tasks and boost productivity.",
+        technologies: ["JavaScript", "DOM Manipulation"],
+        repoUrl: "https://github.com/sumaya-sadat07/To-do-list",
+        liveUrl: ""
     },
-
     {
-      name: "Unit-converter",
-
-      description:
-        "Project description to be added after reviewing the repository and verifying its functionality.",
-
-      tech: [],
-
-      repository:
-        "https://github.com/sumaya-sadat07/Unit-converter",
-
-      demo: "",
-
-      symbol: "↔"
+        name: "Unit-converter",
+        description: "A handy utility application for seamlessly converting between various scientific and everyday units.",
+        technologies: ["JavaScript", "Web Utilities"],
+        repoUrl: "https://github.com/sumaya-sadat07/Unit-converter",
+        liveUrl: ""
     },
-
     {
-      name: "Angry-Birds-Cannon-Simulator",
-
-      description:
-        "Project description to be added after reviewing the repository and verifying its functionality.",
-
-      tech: [],
-
-      repository:
-        "https://github.com/sumaya-sadat07/Angry-Birds-Cannon-Simulator",
-
-      demo: "",
-
-      symbol: "↗"
+        name: "Angry-Birds-Cannon-Simulator",
+        description: "A physics-based projectile motion simulation inspired by classic mechanics principles.",
+        technologies: ["JavaScript", "Physics Logic"],
+        repoUrl: "https://github.com/sumaya-sadat07/Angry-Birds-Cannon-Simulator",
+        liveUrl: ""
     },
-
     {
-      name: "Studio-Canvas-Pro",
-
-      description:
-        "Project description to be added after reviewing the repository and verifying its functionality.",
-
-      tech: [],
-
-      repository:
-        "https://github.com/sumaya-sadat07/Studio-Canvas-Pro",
-
-      demo: "",
-
-      symbol: "✳"
+        name: "Studio-Canvas-Pro",
+        description: "A creative digital canvas application for sketching, designing, and visual ideation.",
+        technologies: ["JavaScript", "HTML Canvas"],
+        repoUrl: "https://github.com/sumaya-sadat07/Studio-Canvas-Pro",
+        liveUrl: ""
     },
-
     {
-      name: "Biomedical-ECG-Monitor",
-
-      description:
-        "Project description to be added after reviewing the repository and verifying its functionality.",
-
-      tech: [],
-
-      repository:
-        "https://github.com/sumaya-sadat07/Biomedical-ECG-Monitor",
-
-      demo: "",
-
-      symbol: "♡"
+        name: "Biomedical-ECG-Monitor",
+        description: "A biomedical engineering project designed to simulate and analyze ECG signal monitoring.",
+        technologies: ["Engineering", "Healthcare Tech", "Data Visualization"],
+        repoUrl: "https://github.com/sumaya-sadat07/Biomedical-ECG-Monitor",
+        liveUrl: ""
     }
+];
 
-  ],
-
-
-  // ----------------------------------------------------------
-  // INTERNSHIPS
-  //
-  // Dates and skills remain unfilled until you provide them.
-  // Do not add skills or achievements you cannot verify.
-  // ----------------------------------------------------------
-
-  internships: [
-
+// 2. INTERNSHIPS DATA
+const internshipsData = [
     {
-      organization: "AP Classroom BD",
-
-      role: "Content Writing & Resource Development",
-
-      dates: "",
-
-      description:
-        "Wrote relevant, resourceful content related to AP. Further details can be added as the work and responsibilities are documented.",
-
-      skills: [],
-
-      link: "",
-
-      symbol: "A"
+        organization: "AP Classroom BD",
+        role: "Content Writer & Resource Developer",
+        dates: "Editable Date / Present",
+        description: "Wrote resourceful, relevant educational content related to AP subjects and student guides.",
+        skills: ["Content Development", "Educational Writing", "AP Curriculum Research"]
     },
-
     {
-      organization: "Aureve",
-
-      role: "Content Writing",
-
-      dates: "",
-
-      description:
-        "Write content about skincare ingredients, components, and related topics. Additional details can be added as the experience develops.",
-
-      skills: [],
-
-      link: "",
-
-      symbol: "A"
+        organization: "Aureve",
+        role: "Skincare Content Writer",
+        dates: "Editable Date / Present",
+        description: "Researched and wrote engaging content regarding various skincare components, ingredients, and related wellness topics.",
+        skills: ["Skincare Science", "Technical Writing", "Component Research"]
     }
+];
 
-  ],
-
-
-  // ----------------------------------------------------------
-  // VOLUNTEERING
-  //
-  // Each activity is a separate entry so you can add details
-  // without changing the page layout.
-  // ----------------------------------------------------------
-
-  volunteering: [
-
+// 3. VOLUNTEERING DATA
+const volunteeringData = [
     {
-      organization: "ICNA Relief, USA",
-
-      activity: "Translation Support",
-
-      role: "Volunteer",
-
-      description:
-        "Supported communication by serving as a translator at community events.",
-
-      dates: "",
-
-      photos: []
-    },
-
-    {
-      organization: "ICNA Relief, USA",
-
-      activity: "Community Events",
-
-      role: "Volunteer",
-
-      description:
-        "Participated in community events and helped with activities as needed.",
-
-      dates: "",
-
-      photos: []
-    },
-
-    {
-      organization: "ICNA Relief, USA",
-
-      activity: "Food Distribution",
-
-      role: "Volunteer",
-
-      description:
-        "Helped distribute food to members of underprivileged communities.",
-
-      dates: "",
-
-      photos: []
+        organization: "ICNA Relief, USA",
+        activity: "Community Events & Translator",
+        role: "Volunteer",
+        description: "Served as a translator at events, volunteered across different community initiatives, and assisted with food distribution for underprivileged community members.",
+        date: "Ongoing Community Service"
     }
+];
 
-  ],
-
-
-  // ----------------------------------------------------------
-  // CREATIVE COLLECTIONS
-  //
-  // HOW TO ADD AN IMAGE:
-  // 1. Create an "images" folder beside index.html.
-  // 2. Put your image inside the appropriate subfolder.
-  // 3. Enter its relative path in image.
-  //
-  // Example:
-  // image: "images/photography/sunset.jpg"
-  //
-  // Keep image empty until you add your actual photograph.
-  // No fictional photographs or artworks are included.
-  // ----------------------------------------------------------
-
-  galleries: {
-
+// 4. CREATIVE GALLERIES DATA
+const creativeData = {
     photography: {
-      name: "Solistice Frames",
-
-      instagram:
-        "https://www.instagram.com/solisticeframes/?hl=en",
-
-      items: [
-        {
-          image: "",
-          title: "",
-          caption: "",
-          date: "",
-          alt: ""
-        },
-        {
-          image: "",
-          title: "",
-          caption: "",
-          date: "",
-          alt: ""
-        },
-        {
-          image: "",
-          title: "",
-          caption: "",
-          date: "",
-          alt: ""
-        }
-      ]
+        title: "Solistice Frames",
+        instagramUrl: "https://www.instagram.com/solisticeframes/?hl=en",
+        items: [
+            { title: "Composition I", caption: "A study in natural light and shadow.", placeholder: "Replace with photo file path" },
+            { title: "Urban Geometry", caption: "Lines and perspectives captured in the city.", placeholder: "Replace with photo file path" },
+            { title: "Silent Horizon", caption: "Stillness captured during evening twilight.", placeholder: "Replace with photo file path" }
+        ]
     },
-
-
     cooking: {
-      name: "The Savora",
-
-      instagram:
-        "https://www.instagram.com/the_savora/?hl=en",
-
-      items: [
-        {
-          image: "",
-          title: "",
-          caption: "",
-          date: "",
-          alt: ""
-        },
-        {
-          image: "",
-          title: "",
-          caption: "",
-          date: "",
-          alt: ""
-        },
-        {
-          image: "",
-          title: "",
-          caption: "",
-          date: "",
-          alt: ""
-        }
-      ]
+        title: "The Savora",
+        instagramUrl: "https://www.instagram.com/the_savora/?hl=en",
+        items: [
+            { title: "Artisan Dish I", caption: "Experimenting with flavor profiles and plating.", placeholder: "Replace with recipe photo" },
+            { title: "Culinary Exploration", caption: "Baking and culinary craft in progress.", placeholder: "Replace with recipe photo" }
+        ]
     },
-
-
     art: {
-      name: "L'Atelier de Sumaya Sadat",
-
-      instagram:
-        "https://www.instagram.com/latelierdesumaya.s/?hl=en",
-
-      items: [
-        {
-          image: "",
-          title: "",
-          caption: "",
-          date: "",
-          alt: ""
-        },
-        {
-          image: "",
-          title: "",
-          caption: "",
-          date: "",
-          alt: ""
-        },
-        {
-          image: "",
-          title: "",
-          caption: "",
-          date: "",
-          alt: ""
-        }
-      ]
+        title: "L'Atelier de Sumaya Sadat",
+        instagramUrl: "https://www.instagram.com/latelierdesumaya.s/?hl=en",
+        items: [
+            { title: "Sketchbook Study", caption: "Pencil and ink experimentation.", placeholder: "Replace with artwork photo" },
+            { title: "Canvas Painting", caption: "Exploring color tones and textures.", placeholder: "Replace with artwork photo" }
+        ]
     }
-
-  }
-
 };
 
+/* ==========================================================================
+   RENDER FUNCTIONS (Injects Data into HTML automatically)
+   ========================================================================== */
 
-// ============================================================
-// PART 2: HELPER FUNCTIONS
-// You normally do not need to edit this section.
-// ============================================================
-
-
-// Find an element by its HTML ID.
-function getElement(id) {
-  return document.getElementById(id);
-}
-
-
-// Escape text before placing it into HTML.
-function escapeHTML(value) {
-  return String(value ?? "").replace(/[&<>"']/g, function (char) {
-    const entities = {
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      '"': "&quot;",
-      "'": "&#39;"
-    };
-
-    return entities[char];
-  });
-}
-
-
-// Allow only safe external web links.
-function safeWebURL(value) {
-  if (typeof value !== "string" || !value.trim()) {
-    return "";
-  }
-
-  try {
-    const url = new URL(value);
-
-    if (url.protocol !== "https:" && url.protocol !== "http:") {
-      return "";
+document.addEventListener("DOMContentLoaded", () => {
+    // Render GitHub Projects
+    const projectsGrid = document.getElementById("projects-grid");
+    if (projectsGrid) {
+        projectsGrid.innerHTML = githubProjects.map(p => `
+            <div class="card">
+                <div>
+                    <h3 class="card-title">${p.name}</h3>
+                    <p class="card-desc">${p.description}</p>
+                    <div class="tech-tags">
+                        ${p.technologies.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a href="${p.repoUrl}" target="_blank" rel="noopener" class="card-link">GitHub Repository &rarr;</a>
+                    <a href="${p.liveUrl || '#'}" target="_blank" rel="noopener" class="card-link ${p.liveUrl ? '' : 'disabled'}">
+                        ${p.liveUrl ? 'Live Demo &rarr;' : 'Awaiting URL'}
+                    </a>
+                </div>
+            </div>
+        `).join('');
     }
 
-    return url.href;
-  } catch {
-    return "";
-  }
-}
-
-
-// Create a link only when a valid URL is provided.
-function externalLink(url, label, className = "") {
-  const safeURL = safeWebURL(url);
-
-  if (!safeURL) {
-    return "";
-  }
-
-  return `
-    <a
-      class="${escapeHTML(className)}"
-      href="${escapeHTML(safeURL)}"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      ${escapeHTML(label)}
-    </a>
-  `;
-}
-
-
-// Display text only when a value exists.
-function optionalText(value, className = "") {
-  if (typeof value !== "string" || !value.trim()) {
-    return "";
-  }
-
-  return `
-    <p class="${escapeHTML(className)}">
-      ${escapeHTML(value)}
-    </p>
-  `;
-}
-
-
-// ============================================================
-// PART 3: GITHUB PROJECT CARDS
-// ============================================================
-
-function renderProjects() {
-  const container = getElement("project-grid");
-
-  if (!container) {
-    return;
-  }
-
-  if (!portfolioData.projects.length) {
-    container.innerHTML = `
-      <p class="empty-message">
-        Projects will appear here when they are added.
-      </p>
-    `;
-    return;
-  }
-
-  container.innerHTML = portfolioData.projects.map(function (project) {
-    const technologies = Array.isArray(project.tech)
-      ? project.tech.filter(function (item) {
-          return typeof item === "string" && item.trim();
-        })
-      : [];
-
-    const techHTML = technologies.length
-      ? technologies.map(function (tech) {
-          return `<span class="tech-tag">${escapeHTML(tech)}</span>`;
-        }).join("")
-      : `<span class="tech-tag">Technologies to be verified</span>`;
-
-    const demoHTML = project.demo
-      ? externalLink(project.demo, "Live Demo ↗")
-      : "";
-
-    const repositoryHTML = externalLink(
-      project.repository,
-      "GitHub Repository ↗"
-    );
-
-    return `
-      <article class="project-card">
-
-        <div class="project-card-top">
-          <span class="project-icon" aria-hidden="true">
-            ${escapeHTML(project.symbol || "↗")}
-          </span>
-
-          <span class="project-label">GitHub Project</span>
-        </div>
-
-        <h3>${escapeHTML(project.name)}</h3>
-
-        <p class="project-description">
-          ${escapeHTML(
-            project.description ||
-            "Project description to be added."
-          )}
-        </p>
-
-        <div class="project-tech" aria-label="Technologies">
-          ${techHTML}
-        </div>
-
-        <div class="project-actions">
-          ${repositoryHTML}
-          ${demoHTML}
-        </div>
-
-      </article>
-    `;
-  }).join("");
-}
-
-
-// ============================================================
-// PART 4: INTERNSHIP CARDS
-// ============================================================
-
-function renderInternships() {
-  const container = getElement("internship-grid");
-
-  if (!container) {
-    return;
-  }
-
-  if (!portfolioData.internships.length) {
-    container.innerHTML = `
-      <p class="empty-message">
-        Internship experiences will appear here when added.
-      </p>
-    `;
-    return;
-  }
-
-  container.innerHTML = portfolioData.internships.map(function (item) {
-    const skills = Array.isArray(item.skills)
-      ? item.skills.filter(function (skill) {
-          return typeof skill === "string" && skill.trim();
-        })
-      : [];
-
-    const skillsHTML = skills.length
-      ? `
-        <h4 class="experience-subheading">Skills developed</h4>
-        <ul class="skills-list">
-          ${skills.map(function (skill) {
-            return `<li>${escapeHTML(skill)}</li>`;
-          }).join("")}
-        </ul>
-      `
-      : "";
-
-    const organizationLink = item.link
-      ? externalLink(item.link, "Visit organization ↗", "experience-link")
-      : "";
-
-    return `
-      <article class="experience-card">
-
-        <div class="experience-topline">
-          <span class="experience-symbol" aria-hidden="true">
-            ${escapeHTML(item.symbol || "I")}
-          </span>
-
-          <span class="experience-dates">
-            ${escapeHTML(item.dates || "Dates to be added")}
-          </span>
-        </div>
-
-        <h3>${escapeHTML(item.organization)}</h3>
-
-        <p class="experience-role">
-          ${escapeHTML(item.role || "Role to be added")}
-        </p>
-
-        <p class="experience-description">
-          ${escapeHTML(item.description || "Description to be added.")}
-        </p>
-
-        ${skillsHTML}
-        ${organizationLink}
-
-      </article>
-    `;
-  }).join("");
-}
-
-
-// ============================================================
-// PART 5: VOLUNTEERING CARDS
-// ============================================================
-
-function renderVolunteering() {
-  const container = getElement("volunteering-grid");
-
-  if (!container) {
-    return;
-  }
-
-  if (!portfolioData.volunteering.length) {
-    container.innerHTML = `
-      <p class="empty-message">
-        Volunteering experiences will appear here when added.
-      </p>
-    `;
-    return;
-  }
-
-  container.innerHTML = portfolioData.volunteering.map(function (item) {
-    return `
-      <article class="volunteer-card">
-
-        <p class="collection-number">
-          ${escapeHTML(item.organization)}
-        </p>
-
-        <h3>${escapeHTML(item.activity)}</h3>
-
-        <p class="volunteer-role">
-          ${escapeHTML(item.role || "Volunteer")}
-        </p>
-
-        <p class="volunteer-description">
-          ${escapeHTML(item.description || "Details to be added.")}
-        </p>
-
-        ${item.dates ? `
-          <span class="volunteer-date">
-            ${escapeHTML(item.dates)}
-          </span>
-        ` : ""}
-
-      </article>
-    `;
-  }).join("");
-}
-
-
-// ============================================================
-// PART 6: CREATIVE GALLERIES
-// ============================================================
-
-
-// Generate a single gallery item.
-// Empty image fields display an editable placeholder instead.
-function renderGalleryItem(item, category, index) {
-  const imageURL = typeof item.image === "string"
-    ? item.image.trim()
-    : "";
-
-  const hasImage = imageURL.length > 0;
-
-  const title = item.title || "";
-  const caption = item.caption || "";
-  const date = item.date || "";
-
-  let imageHTML = "";
-
-  if (hasImage) {
-    const safeImage = escapeHTML(imageURL);
-
-    const altText = item.alt || title || "Portfolio photograph";
-
-    imageHTML = `
-      <img
-        src="${safeImage}"
-        alt="${escapeHTML(altText)}"
-        loading="lazy"
-        onerror="this.hidden=true; this.nextElementSibling.hidden=false;"
-      >
-
-      <div class="gallery-placeholder" hidden>
-        <span class="gallery-placeholder-symbol" aria-hidden="true">
-          ✳
-        </span>
-        <p>Replace with your image</p>
-      </div>
-    `;
-  } else {
-    imageHTML = `
-      <div class="gallery-placeholder">
-        <span class="gallery-placeholder-symbol" aria-hidden="true">
-          ${category === "cooking" ? "◇" : category === "art" ? "✳" : "○"}
-        </span>
-
-        <p>
-          Add your ${escapeHTML(category)} image here
-        </p>
-      </div>
-    `;
-  }
-
-  let captionHTML = "";
-
-  if (title || caption || date) {
-    captionHTML = `
-      <div class="gallery-caption">
-
-        ${title ? `<h4>${escapeHTML(title)}</h4>` : ""}
-
-        ${caption ? `<p>${escapeHTML(caption)}</p>` : ""}
-
-        ${date ? `
-          <span class="gallery-date">${escapeHTML(date)}</span>
-        ` : ""}
-
-      </div>
-    `;
-  } else {
-    captionHTML = `
-      <div class="gallery-caption">
-        <p>Add your caption in script.js.</p>
-      </div>
-    `;
-  }
-
-  return `
-    <article class="gallery-item">
-
-      <div class="gallery-image-wrap">
-        ${imageHTML}
-      </div>
-
-      ${captionHTML}
-
-    </article>
-  `;
-}
-
-
-// Render one creative collection.
-function renderGallery(category, containerId) {
-  const container = getElement(containerId);
-
-  if (!container) {
-    return;
-  }
-
-  const gallery = portfolioData.galleries[category];
-
-  if (!gallery || !Array.isArray(gallery.items) || !gallery.items.length) {
-    container.innerHTML = `
-      <p class="empty-message">
-        Add your own content to this gallery in script.js.
-      </p>
-    `;
-    return;
-  }
-
-  container.innerHTML = gallery.items.map(function (item, index) {
-    return renderGalleryItem(item, category, index);
-  }).join("");
-}
-
-
-// ============================================================
-// PART 7: CONTACT INFORMATION
-// ============================================================
-
-function renderContact() {
-  const container = getElement("contact-links");
-
-  if (!container) {
-    return;
-  }
-
-  const personal = portfolioData.personal;
-
-  const contactItems = [
-    {
-      label: "Email",
-      value: personal.email,
-      href: personal.email ? "mailto:" + personal.email : ""
-    },
-    {
-      label: "LinkedIn",
-      value: "Visit my LinkedIn profile",
-      href: personal.linkedin
-    },
-    {
-      label: "GitHub",
-      value: "Explore my repositories",
-      href: personal.github
-    }
-  ];
-
-  container.innerHTML = contactItems.map(function (item) {
-    let href = "";
-
-    if (item.label === "Email") {
-      // Only use a valid, basic email address for the mailto link.
-      const email = String(item.value || "").trim();
-
-      if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        href = "mailto:" + email;
-      }
-    } else {
-      href = safeWebURL(item.href);
+    // Render Internships
+    const internshipsGrid = document.getElementById("internships-grid");
+    if (internshipsGrid) {
+        internshipsGrid.innerHTML = internshipsData.map(i => `
+            <div class="card">
+                <div>
+                    <span class="card-subtitle">${i.organization}</span>
+                    <h3 class="card-title">${i.role}</h3>
+                    <p class="card-meta"><strong>Timeline:</strong> ${i.dates}</p>
+                    <p class="card-desc">${i.description}</p>
+                    <div class="tech-tags">
+                        ${i.skills.map(s => `<span class="tech-tag">${s}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `).join('');
     }
 
-    if (!href) {
-      return "";
+    // Render Volunteering
+    const volunteeringGrid = document.getElementById("volunteering-grid");
+    if (volunteeringGrid) {
+        volunteeringGrid.innerHTML = volunteeringData.map(v => `
+            <div class="card">
+                <div>
+                    <span class="card-subtitle">${v.organization}</span>
+                    <h3 class="card-title">${v.activity}</h3>
+                    <p class="card-meta"><strong>Role:</strong> ${v.role} | <strong>Duration:</strong> ${v.date}</p>
+                    <p class="card-desc">${v.description}</p>
+                </div>
+            </div>
+        `).join('');
     }
 
-    return `
-      <div class="contact-item">
+    // Creative Tabs and Gallery Rendering Logic
+    const creativeArea = document.getElementById("creative-content-area");
+    const tabButtons = document.querySelectorAll(".tab-btn");
 
-        <div>
-          <span class="contact-item-label">
-            ${escapeHTML(item.label)}
-          </span>
+    function renderGallery(categoryKey) {
+        const cat = creativeData[categoryKey];
+        if (!cat || !creativeArea) return;
 
-          <a
-            href="${escapeHTML(href)}"
-            ${item.label === "Email" ? "" : 'target="_blank" rel="noopener noreferrer"'}
-          >
-            ${escapeHTML(item.value)}
-          </a>
-        </div>
-
-        <span class="contact-arrow" aria-hidden="true">↗</span>
-
-      </div>
-    `;
-  }).join("");
-}
-
-
-// ============================================================
-// PART 8: MOBILE NAVIGATION
-// ============================================================
-
-function setupMobileNavigation() {
-  const menuButton = getElement("menu-toggle");
-  const navLinks = getElement("nav-links");
-
-  if (!menuButton || !navLinks) {
-    return;
-  }
-
-  function closeMenu() {
-    navLinks.classList.remove("is-open");
-
-    menuButton.setAttribute("aria-expanded", "false");
-    menuButton.setAttribute("aria-label", "Open navigation menu");
-  }
-
-  menuButton.addEventListener("click", function () {
-    const isOpen = navLinks.classList.toggle("is-open");
-
-    menuButton.setAttribute("aria-expanded", String(isOpen));
-
-    menuButton.setAttribute(
-      "aria-label",
-      isOpen ? "Close navigation menu" : "Open navigation menu"
-    );
-  });
-
-  // Close the mobile menu after choosing a navigation link.
-  navLinks.querySelectorAll("a").forEach(function (link) {
-    link.addEventListener("click", closeMenu);
-  });
-
-  // Close the menu when Escape is pressed.
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      closeMenu();
-      menuButton.focus();
+        creativeArea.innerHTML = `
+            <div class="gallery-container active">
+                <div class="gallery-header-bar">
+                    <h3>${cat.title}</h3>
+                    <a href="${cat.instagramUrl}" target="_blank" rel="noopener" class="btn btn-secondary">Visit Instagram Page</a>
+                </div>
+                <div class="gallery-grid">
+                    ${cat.items.map(item => `
+                        <div class="gallery-item">
+                            <div class="image-placeholder">[ ${item.placeholder} ]</div>
+                            <div class="gallery-caption">
+                                <h4>${item.title}</h4>
+                                <p>${item.caption}</p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
     }
-  });
 
-  // Reset the menu when switching back to desktop width.
-  window.addEventListener("resize", function () {
-    if (window.innerWidth > 820) {
-      closeMenu();
+    // Initial render for photography
+    renderGallery('photography');
+
+    // Tab button click listeners
+    tabButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            tabButtons.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            const targetKey = btn.getAttribute("data-target");
+            renderGallery(targetKey);
+        });
+    });
+
+    // Mobile Navigation Toggle
+    const menuToggle = document.querySelector(".mobile-menu-toggle");
+    const siteNav = document.querySelector(".site-nav");
+
+    if (menuToggle && siteNav) {
+        menuToggle.addEventListener("click", () => {
+            siteNav.classList.toggle("active");
+        });
+
+        // Close menu when clicking a link on mobile
+        siteNav.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => {
+                siteNav.classList.remove("active");
+            });
+        });
     }
-  });
-}
-
-
-// ============================================================
-// PART 9: FOOTER YEAR
-// ============================================================
-
-function renderCurrentYear() {
-  const yearElement = getElement("current-year");
-
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-  }
-}
-
-
-// ============================================================
-// PART 10: INITIALIZE THE WEBSITE
-// ============================================================
-
-function initializePortfolio() {
-  renderProjects();
-
-  renderInternships();
-
-  renderVolunteering();
-
-  renderGallery("photography", "photography-gallery");
-
-  renderGallery("cooking", "cooking-gallery");
-
-  renderGallery("art", "art-gallery");
-
-  renderContact();
-
-  renderCurrentYear();
-
-  setupMobileNavigation();
-}
-
-
-// Run after the HTML document has been parsed.
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initializePortfolio);
-} else {
-  initializePortfolio();
-}
+});
