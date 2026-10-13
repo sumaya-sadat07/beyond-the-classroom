@@ -68,22 +68,22 @@ const volunteeringData = [
     }
 ];
 
-// 4. CREATIVE PAGES DATA (Direct clean Instagram links)
+// 4. CREATIVE PAGES DATA (With correct functional Instagram links)
 const creativeData = {
     photography: {
         title: "Solistice Frames",
         description: "Explore my photography gallery capturing candid moments, natural light, and urban perspectives.",
-        instagramUrl: "https://www.instagram.com/solisticeframes/?hl=en"
+        instagramUrl: "https://www.instagram.com/_solisticeframes_?cplk=MWpteWU4cml0djM1Zw=="
     },
     cooking: {
         title: "The Savora",
         description: "Discover culinary creations, recipe experiments, plating, and food artistry.",
-        instagramUrl: "https://www.instagram.com/the_savora/?hl=en"
+        instagramUrl: "https://www.instagram.com/_the_savora_?obrf=MXhwdDJlcWlqd3hobQ=="
     },
     art: {
         title: "L'Atelier de Sumaya Sadat",
         description: "Browse through my sketchbook studies, canvas paintings, and visual art pieces.",
-        instagramUrl: "https://www.instagram.com/latelierdesumaya.s/?hl=en"
+        instagramUrl: "https://www.instagram.com/latelierdesumaya.s?exln=aml3OW03a3o2aHo2"
     }
 };
 
